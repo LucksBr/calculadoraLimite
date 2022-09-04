@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color1: #242423;
+    --color2: #e8eddf;
+    --color3:  #f5cb5c;
+    --color4: #cfdbd5;
+    --color5: #333533;
+    --colorLight5: #3e413e;
+}
+
+body {
+    background-color: var(--color2);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: var(--color1);
+    width: 100vw;
+    height: 60px;
+    color: var(--color3);
+    z-index: 10;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.flex-center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+
+main {
+    width: 70%;
+    min-width: 320px;
+    background-color: var(--color4);
+   min-height: calc(100% - 60px );
+    color: var(--color5);
+    font-weight: 500;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.content-expressao {
+    width: 100%;
+    height: 40px;
+}
+
+.contentInput {
+    width: 80%;
+    font-size: 20px;
+    padding: 4px;
+    color: var(--color5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0px 5px 5px 0px;
+    border-left: 0;
+    background-color: var(--color2);
+}
+
+.contentLabel {
+    font-size: 20px;
+    padding: 4px;
+    background-color:var(--color5);
+    color: var(--color3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 0;
+    width: 70px;
+}
+
+
+#limite {
+    width: 50%;
+}
+
+.content-calc {
+    width: 320px;
+    height: 349px;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-calc > input {
+    width: 60px;
+    height: 60px;
+    margin: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.302);
+    border-radius: 3px;
+    color: var(--color3);
+    font-size: 25px;
+    background-color: var(--color5);
+}
+
+.content-calc > input:hover {
+    background-color: var(--colorLight5);
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+#igual {
+    width: 100%;
+    height: 60px;
+    margin: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.302);
+    border-radius: 3px;
+    color: var(--color3);
+    font-size: 28px;
+    background-color: var(--color5);
+}
+
+#igual:hover {
+    background-color: var(--colorLight5);
+    font-size: 26px;
+    transition: 0.4s;
+}
+
+span {
+    font-size: 20px;
+    text-align: center;
+}

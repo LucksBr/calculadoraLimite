@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
+        <script defer language="javascript" src="script/script.js"></script>
+    </head>
+    <body>
+        <header class="flex-center-column">
+            <h1>Calculadora de Limites</h1>
+        </header>
+
+        <main>
+            <h2>Escreva sua função</h2>
+
+            <div class="flex-center content-expressao">
+                <label class="contentLabel">F(x) =</label>
+                <input disabled class="contentInput" id="conta" type="text">
+            </div>
+
+            <div id="content-limite" class="flex-center content-expressao ">
+                <label class="contentLabel">Limite: </label>
+                <input class="contentInput" id="limite" type="number">
+            </div>
+            
+            <div class="content-calc">
+                <input class="numeros" type="button" value="7">
+                <input class="numeros" type="button" value="8">
+                <input class="numeros" type="button" value="9">
+                <input id="apagar" type="button" value="C">
+                <br>
+                <input class="numeros" type="button" value="4">
+                <input class="numeros" type="button" value="5">
+                <input class="numeros" type="button" value="6">
+                <input class="operacoes" type="button" value="+">
+                <br>
+                <input class="numeros" type="button" value="1">
+                <input class="numeros" type="button" value="2">
+                <input class="numeros" type="button" value="3">
+                <input class="operacoes" type="button" value="-">
+                <br>
+                <input class="numeros" type="button" value="0">
+                <input class="operacoes" type="button" value="*">
+                <input class="operacoes" type="button" value="/">
+                <input id="botaoX" type="button" value="X">
+                <input id="igual" type="button" value="Calcular">
+            </div>
+            
+            <span>O limite da função é: <span id="resultado"></span></span>
+        </main>
+    </body>
+</html>
